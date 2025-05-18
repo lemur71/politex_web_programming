@@ -1,1 +1,133 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mykola Savitskyi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mykola Savitskyi</h1>
+    <p>
+        123 Main Street<br>
+        New York, NY 10001<br>
+        Phone: (123) 456-7890<br>
+        Email: mykola.savitskyi.kb.2022@lpnu.ua
+    </p>
+
+    <h2>Education</h2>
+    <ul>
+        <li>
+            <b>Bachelor's degree, Cybersecurity</b><br>
+            Lviv Polytechnic National University National <br>
+            2022-2026
+        </li>
+        <li>
+            <b>School Diploma</b><br>
+            School #77 with in-depth study of economics and management, Lviv<br>
+            2011-2022
+        </li>
+    </ul>
+
+    <h2>Work Experience</h2>
+    <ul>
+        <li>
+            <b>Tier 1 SOC Analyst</b><br>
+            UnderDefense Cybersecurity, New York<br>
+            Feb 2025-Present<br>
+            - Monitored and analyzed security events using SIEM tools (Splunk, Elastic, Microsoft Sentinel, IBM QRadar, Sumo Logic)<br>
+            - Investigated endpoint threats with EDR solutions (CrowdStrike, SentinelOne, Microsoft Defender for endpoint, Cortex)<br>
+            - Reviewed firewall and network traffic logs<br>
+            - Collaborated with Tier 2/3 analysts for threat resolution<br>
+            - Conducted initial incident response and threat analysis<br>
+        </li>
+    </ul>
+
+    <h2>Internships</h2>
+    <ul>
+        <li>
+            <b>UnderDefense Cybersecurity</b><br>
+            Aug 2024 - Feb 2025
+        </li>
+        <li>
+            <b>SoftServe</b><br>
+            Jul 2024 - Aug 2024
+        </li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+<ul>
+    <li>
+        <b>Operating Systems</b><br>
+        - Linux system administration (Bash scripting, package management, security hardening)<br>
+        - Windows Server management (Active Directory, Group Policy, PowerShell automation)
+    </li>
+    
+    <li>
+        <b>Networking & Infrastructure</b><br>
+        - Network configuration and troubleshooting (TCP/IP, DNS, DHCP, VPN)<br>
+        - Firewall management and intrusion detection systems<br>
+    </li>
+
+    <li>
+        <b>Security Operations</b><br>
+        - SOC operations (SIEM tools, log analysis, incident response)<br>
+        - Threat hunting and vulnerability assessment<br>
+        - Penetration testing methodologies<br>
+        - Digital forensics and malware analysis
+    </li>
+
+    <li>
+        <b>Cloud Security</b><br>
+        - Cloud infrastructure security (AWS/Azure/GCP)<br>
+        - Container security (Docker, Kubernetes)<br>
+        - Cloud compliance frameworks
+    </li>
+
+    <li>
+        <b>Programming & Automation</b><br>
+        - Python scripting (security automation, tool development)<br>
+        - REST API integration and security testing<br>
+    </li>
+</ul>
+
+    <h2>Languages</h2>
+    <ul>
+        <li>Ukrainian (Native)</li>
+        <li>English (B2)</li>
+    </ul>
+    <section id="comments-section">
+        <h2>Employer Comments</h2>
+        <div id="comments-container"></div>
+    </section>
+    <script src="script.js"></script>
+    <footer id="storage-footer">
+        <h3>Browser Information from localStorage</h3>
+        <div class="localstorage-content"></div>
+    </footer>
+
+    <script src="feedback.js"></script>
+    <div id="feedback-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Feedback Form</h2>
+            <form action="https://formspree.io/f/xwpoyzqk" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="theme.js"></script>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+</body>
+</html>
